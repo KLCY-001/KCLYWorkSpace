@@ -29,7 +29,6 @@ filelock==3.18.0
 fqdn==1.5.1
 fsspec==2025.3.2
 future==0.18.3
-gevent==22.10.2
 gevent-websocket==0.10.1
 greenlet==2.0.2
 h11==0.16.0
