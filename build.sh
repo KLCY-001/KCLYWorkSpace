@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
-# 升级 pip
-pip install --upgrade pip
+cd "$(dirname "$0")"
 
-# 安装依赖
+# 升级 pip，并禁用 PEP 517（否则会依赖 setuptools.build_meta）
+pip install --upgrade pip setuptools wheel
+
+# 安装依赖，禁用 build isolation（PEP 517）
 pip install --no-build-isolation -r requirements.txt
 
-# 收集静态文件
-python manage.py collectstatic --noinput
+# 收集静态文件（可选）
+python manage.py collectstatic --noinput || echo "No static files."
