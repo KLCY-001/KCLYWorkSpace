@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# 切换到项目根目录
-cd ../
-
 # 升级 pip
 pip install --upgrade pip
 
