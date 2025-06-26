@@ -129,3 +129,4 @@ zope.event==4.6
 zope.interface==6.0
 gunicorn
 psycopg2-binary
+dj-database-url>=1.0.0
